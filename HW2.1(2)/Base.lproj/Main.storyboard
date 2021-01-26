@@ -22,6 +22,9 @@
                                 <state key="normal" title="START">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="switchLightButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="1nM-Ab-BTQ"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="N46-Ka-6Kz">
                                 <rect key="frame" x="85" y="11" width="150" height="466"/>
@@ -56,10 +59,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="switchTrafficLightButton" destination="EqS-Tj-NSE" id="SlB-FU-vxQ"/>
+                        <outlet property="trafficLight" destination="N46-Ka-6Kz" id="R4h-G9-7ni"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="392" y="119"/>
+            <point key="canvasLocation" x="-139" y="-63"/>
         </scene>
     </scenes>
 </document>
