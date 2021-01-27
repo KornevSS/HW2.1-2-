@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         switchTrafficLightButton.layer.cornerRadius = 10
         for singleLight in trafficLight.arrangedSubviews {
-            singleLight.layer.cornerRadius = 75
+            singleLight.layer.cornerRadius = singleLight.frame.width / 2
         }
     }
 
